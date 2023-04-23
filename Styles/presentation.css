@@ -16,6 +16,10 @@ body {
 .face-image {
     width: 23%;
     border-radius: 5px;
+    transition: .5s;
+}
+.face-image:hover {
+    width: 23.3%;
 }
 .text-content {
     display: block;
