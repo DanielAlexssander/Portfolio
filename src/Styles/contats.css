@@ -1,0 +1,54 @@
+body {
+    font-family: "Inter", "Poppins", sans-serif;
+    background-image: linear-gradient(230deg, rgb(8, 8, 8) 50%, rgb(0, 6, 19));
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 98vw;
+    height: 98vh;
+    font-size: 16px;
+}
+.face-image {
+    width: 30%;
+    border-radius: 50%;
+}
+.links-ul {
+    list-style-type: none;
+}
+.links-ul li {
+   margin-bottom: .5em;
+   margin-right: 3em;
+   padding: 1em;
+   border: solid rgba(0, 91, 209, 0.726) 1px;
+   border-radius: 5px;
+   background-color: transparent;
+   transition: .5s;
+}
+.links-ul li:hover {
+    background-color: rgb(255, 255, 255, 0.05);
+}
+.links-ul i {
+    color: rgba(0, 91, 209, 0.726);
+}
+.links-ul a {
+    color: white;
+    text-decoration: none;
+
+}
+.container-nav{
+    text-align: center;
+    margin-right: 1em;
+}
+.container-nav a {
+    color: white;
+    border-bottom: solid white 1px;
+    text-decoration: none;
+    margin: 3em;
+    transition: .5s;
+}
+.container-nav a:hover {
+    letter-spacing: .1em;
+}
