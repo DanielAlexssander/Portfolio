@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    font-family: "Cabin", sans-serif;
+    font-family: "Inter", "Poppins", sans-serif;
     background-image: linear-gradient(230deg, rgb(8, 8, 8) 50%, rgb(0, 6, 19));
     background-attachment: fixed;
 }
@@ -15,8 +15,10 @@ body {
 }
 .face-image {
     width: 23%;
-    border-radius: 5px;
+    border-radius: 50%;
     transition: .5s;
+    background: rgb(0,45,84);
+    background: linear-gradient(90deg, rgba(0,45,84,1) 0%, rgba(0,107,175,1) 35%, rgba(0,212,255,1) 100%);
 }
 .face-image:hover {
     width: 23.3%;
