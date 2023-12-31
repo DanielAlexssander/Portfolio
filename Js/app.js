@@ -3,9 +3,20 @@ let date = new Date()
 // My age
 
 const ageHTML = document.querySelector("#age")
-let currentYear = date.getFullYear()
-const birthday = 2005
-let myAge = currentYear - birthday
+let currentDate = date.getDate();
+let currentMonth = date.getMonth();
+let currentYear = date.getFullYear();
+
+let currentYears = 0
+if (currentMonth >= 8 && currentDate >= 16) {
+    currentYear = date.getFullYear() + 1;
+    currentYears = 2005;
+} else {
+    currentYear = date.getFullYear();
+    currentYears = 2006;
+}
+let currentYearOld = date.getFullYear();
+let myAge = currentYearOld - currentYears;
 
 ageHTML.textContent = myAge
 
