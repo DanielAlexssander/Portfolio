@@ -1,26 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/presentation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <title>Portfólio | Daniel</title>
-</head>
-<body>
-    <div class="content">
-        <img class="face-image" src="Images/Daniel.png" alt="">
-        <div class="text-content">
-            <h2 class="welcome">Olá, Seja bem-vindo ao meu Portfólio</h2>
-            <h1>Daniel Alexssander</h1>
-            <h2>Desenvolvedor Front-End</h2>
-            <p>Olá <span id="greeting"></span>! meu nome é Daniel, tenho <span id="age"></span> anos. Sou uma pessoa focada no meu objetivo, e atualmente meu objetivo é me tornar um desenvolvedor Front-End de sucesso. Dedico grande parte do meu tempo para estudar e aprimorar minhas habilidades nessa área, buscando sempre me atualizar sobre as últimas tendências e tecnologias. Meu objetivo é me tornar um profissional competente e capaz de oferecer soluções criativas e eficientes para os desafios que surgirem na área.</p>
-            <a class="link-contats" href="https://danielalexssander.github.io/Contatos/">Contatos</a>
-            <a class="view-projects" href="https://danielalexssander.github.io/Projetos/">Ver Projetos <i class="fa-solid fa-arrow-right-long"></i></a>
-        </div>
-    </div>
-    <script src="Js/app.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="Styles/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<title>Portfólio | Daniel</title>
+	</head>
+	<body>
+		<div class="all-page">
+			<header>
+				<nav class="navHeader">
+					<button class="navBtn" onclick="ClickButtonNav()">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+					<ul id="ulNav" class="ulNav">
+						<li><a class="aNav" href="#">Home</a></li>
+						<li><a class="aNav projects-link" href="#projects">Projetos</a></li>
+						<li>
+							<a class="aNav contats-link" href="#container-contacts"
+								>Contatos</a
+							>
+						</li>
+						<li>
+							<a class="aNav" href="https://github.com/DanielAlexssander"
+								>GitHub</a
+							>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="header center" id="home">
+					<div class="headerContent">
+						<div class="headerContentName">
+							<h1>Daniel Alexssander</h1>
+							<h2>Desenvolvedor Front-End</h2>
+						</div>
+						<div class="text-presentation">
+							<p>
+								Olá <span id="greeting"></span>! Tenho
+								<span id="age"></span> anos. Sou uma pessoa focada no meu
+								objetivo, e atualmente meu objetivo é me tornar um desenvolvedor
+								de sucesso. Dedico grande parte do meu tempo para estudar e
+								aprimorar minhas habilidades nessa área, buscando sempre me
+								atualizar sobre as últimas tendências e tecnologias. Meu
+								objetivo é me tornar um profissional competente e capaz de
+								oferecer soluções criativas e eficientes para os desafios que
+								surgirem na área.
+							</p>
+						</div>
+						<div class="projectsBtn">
+							<a class="projects-link" href="#projects">Projetos</a>
+							<a class="contats-link" href="#container-contacts">Contatos</a>
+						</div>
+					</div>
+					<div>
+						<img class="pic-logo" src="Images/logo.png" alt="" />
+					</div>
+				</section>
+			</header>
+
+			<section class="bar-slide">
+				<div class="scroll-left center">
+					<div class="item-box">
+						<i class="fa-brands fa-html5 white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-css3-alt white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-square-js white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-sass white"></i>
+					</div>
+					<div class="item-box">
+						<svg
+							width="75px"
+							height="75px"
+							viewBox="0 0 32 28"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>file_type_typescript_official</title>
+							<rect
+								x="2"
+								y="2"
+								width="28"
+								height="28"
+								rx="1.312"
+								style="fill: #ffffff"
+							/>
+							<path
+								d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"
+								style="fill: #001131; fill-rule: evenodd"
+							/>
+						</svg>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-node white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-git-alt white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-html5 white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-css3-alt white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-square-js white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-sass white"></i>
+					</div>
+					<div class="item-box">
+						<svg
+							width="75px"
+							height="75px"
+							viewBox="0 0 32 28"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>file_type_typescript_official</title>
+							<rect
+								x="2"
+								y="2"
+								width="28"
+								height="28"
+								rx="1.312"
+								style="fill: #ffffff"
+							/>
+							<path
+								d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"
+								style="fill: #001131; fill-rule: evenodd"
+							/>
+						</svg>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-node white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-git-alt white"></i>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects" id="projects">
+				<h1 class="tittleProject">Projetos:</h1>
+				<div class="sectionProjects"></div>
+
+				<div class="divBackToTop">
+					<a class="backToTop" href="#"
+						><i class="fa-solid fa-arrow-up-long"></i> Voltar ao topo</a
+					>
+				</div>
+			</section>
+
+			<section class="bar-slide">
+				<div class="scroll-left center">
+					<div class="item-box">
+						<i class="fa-brands fa-html5 white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-css3-alt white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-square-js white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-sass white"></i>
+					</div>
+					<div class="item-box">
+						<svg
+							width="75px"
+							height="75px"
+							viewBox="0 0 32 28"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>file_type_typescript_official</title>
+							<rect
+								x="2"
+								y="2"
+								width="28"
+								height="28"
+								rx="1.312"
+								style="fill: #ffffff"
+							/>
+							<path
+								d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"
+								style="fill: #001131; fill-rule: evenodd"
+							/>
+						</svg>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-node white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-git-alt white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-html5 white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-css3-alt white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-square-js white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-sass white"></i>
+					</div>
+					<div class="item-box">
+						<svg
+							width="75px"
+							height="75px"
+							viewBox="0 0 32 28"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>file_type_typescript_official</title>
+							<rect
+								x="2"
+								y="2"
+								width="28"
+								height="28"
+								rx="1.312"
+								style="fill: #ffffff"
+							/>
+							<path
+								d="M18.245,23.759v3.068a6.492,6.492,0,0,0,1.764.575,11.56,11.56,0,0,0,2.146.192,9.968,9.968,0,0,0,2.088-.211,5.11,5.11,0,0,0,1.735-.7,3.542,3.542,0,0,0,1.181-1.266,4.469,4.469,0,0,0,.186-3.394,3.409,3.409,0,0,0-.717-1.117,5.236,5.236,0,0,0-1.123-.877,12.027,12.027,0,0,0-1.477-.734q-.6-.249-1.08-.484a5.5,5.5,0,0,1-.813-.479,2.089,2.089,0,0,1-.516-.518,1.091,1.091,0,0,1-.181-.618,1.039,1.039,0,0,1,.162-.571,1.4,1.4,0,0,1,.459-.436,2.439,2.439,0,0,1,.726-.283,4.211,4.211,0,0,1,.956-.1,5.942,5.942,0,0,1,.808.058,6.292,6.292,0,0,1,.856.177,5.994,5.994,0,0,1,.836.3,4.657,4.657,0,0,1,.751.422V13.9a7.509,7.509,0,0,0-1.525-.4,12.426,12.426,0,0,0-1.9-.129,8.767,8.767,0,0,0-2.064.235,5.239,5.239,0,0,0-1.716.733,3.655,3.655,0,0,0-1.171,1.271,3.731,3.731,0,0,0-.431,1.845,3.588,3.588,0,0,0,.789,2.34,6,6,0,0,0,2.395,1.639q.63.26,1.175.509a6.458,6.458,0,0,1,.942.517,2.463,2.463,0,0,1,.626.585,1.2,1.2,0,0,1,.23.719,1.1,1.1,0,0,1-.144.552,1.269,1.269,0,0,1-.435.441,2.381,2.381,0,0,1-.726.292,4.377,4.377,0,0,1-1.018.105,5.773,5.773,0,0,1-1.969-.35A5.874,5.874,0,0,1,18.245,23.759Zm-5.154-7.638h4V13.594H5.938v2.527H9.92V27.375h3.171Z"
+								style="fill: #001131; fill-rule: evenodd"
+							/>
+						</svg>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-node white"></i>
+					</div>
+					<div class="item-box">
+						<i class="fa-brands fa-git-alt white"></i>
+					</div>
+				</div>
+			</section>
+
+			<section id="container-contacts">
+				<div>
+					<img class="face-image" src="Images/logo.png" alt="" />
+					<h1 class="name">Contatos:</h1>
+					<button class="copyBtn"><i class="fa-solid fa-copy"></i></button>
+					<ul class="links-ul center">
+						<div>
+							<div class="gmail">
+								<a href="mailto:danielrossinatti15@gmail.com"
+									><li class="gmailLi">
+										<i class="fa-regular fa-envelope"></i> Gmail
+									</li></a
+								>
+							</div>
+							<a href="https://www.linkedin.com/in/daniel-alexssander-667933148"
+								><li><i class="fa-brands fa-linkedin"></i> Linkedin</li></a
+							>
+							<a
+								href="https://profile.indeed.com/?hl=pt_BR&co=BR&from=gnav-homepage&_ga=2.232801303.840665186.1682014064-110041772.1682014064"
+								><li><i class="fa-solid fa-info"></i> Indeed</li></a
+							>
+							<a href="https://wa.me/5521968603176"
+								><li><i class="fa-brands fa-whatsapp"></i> WhatsApp</li></a
+							>
+							<a href="https://discord.gg/apUjj8JRVC"
+								><li><i class="fa-brands fa-discord"></i> Discord</li></a
+							>
+							<a href="https://github.com/DanielAlexssander"
+								><li><i class="fa-brands fa-github"></i> GitHub</li></a
+							>
+						</div>
+					</ul>
+				</div>
+			</section>
+
+			<footer>
+				<div class="footer">
+					<h3>Tecnologias Utilizadas:</h3>
+					<ul class="ulFooter flex">
+						<li class="liFooter"><i class="fa-brands fa-html5 orange"></i></li>
+						<li class="liFooter"><i class="fa-brands fa-css3-alt blue"></i></li>
+						<li class="liFooter">
+							<i class="fa-brands fa-square-js yellow"></i>
+						</li>
+					</ul>
+					<a
+						class="thisCodBtn"
+						target="_blank"
+						href="https://github.com/DanielAlexssander/Projetos"
+						>Código desta página</a
+					>
+				</div>
+			</footer>
+		</div>
+		<script src="Js/app.js"></script>
+	</body>
 </html>
