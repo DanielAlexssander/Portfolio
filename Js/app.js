@@ -92,8 +92,8 @@
 			nameProject: "Mini Blog",
 			liTec: React + Firebase + Node + JavaScript + CSS,
 			informations: `Projeto feito em React, consiste em um Blog com todas as funcionalidades em react usando o banco de dados do Firebase.`,
-			urlSite: "https://danielalexssander.github.io/Memory-Game/",
-			urlCod: "https://github.com/DanielAlexssander/Memory-Game",
+			urlSite: "https://miniblog-by-danielalexssander.netlify.app",
+			urlCod: "https://github.com/DanielAlexssander/miniblog",
 		},
 		{
 			urlGif: "Images/memorycard.gif",
