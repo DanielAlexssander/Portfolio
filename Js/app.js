@@ -34,7 +34,7 @@
 		let currentYear = date.getFullYear();
 
 		let currentYears = 0;
-		if (currentMonth >= 8 && currentDate >= 16) {
+		if (currentMonth > 8 || (currentMonth === 8 && currentDate >= 16)) {
 			currentYear = date.getFullYear() + 1;
 			currentYears = 2005;
 		} else {
