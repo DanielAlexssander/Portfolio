@@ -225,6 +225,16 @@ header {
 	width: 460px;
 	height: 260px;
 }
+.gif-app {
+	width: 200px;
+	height: 380px;
+}
+.project:nth-child(odd) .gif-app {
+	margin-left: 5em;
+}
+.project:nth-child(even) .gif-app {
+	margin-right: 5em;
+}
 .technologyUsed {
 	font-size: 1.2em;
 	margin-top: 10px;
@@ -594,6 +604,12 @@ header {
 	}
 	.project:nth-child(even) .informations-content {
 		right: 0;
+	}
+	.project:nth-child(odd) .gif-app {
+		margin-left: 0;
+	}
+	.project:nth-child(even) .gif-app {
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 600px) {
