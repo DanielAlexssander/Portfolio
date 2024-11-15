@@ -181,7 +181,7 @@
                         <div class="btn">
                             <a class="siteBtn" target="_blank" href="${
 															project.urlSite
-														}">Site</a>
+														}">${project.app === true ? "Apk" : "Site"}</a>
                             <a class="codBtn" target="_blank" href="${
 															project.urlCod
 														}">Código</a>
